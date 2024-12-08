@@ -1,0 +1,6 @@
+@LMSapi_HostAddress = http://localhost:5093
+
+GET {{LMSapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

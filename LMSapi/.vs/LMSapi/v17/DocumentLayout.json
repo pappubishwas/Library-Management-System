@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Chubb\\Capstone\\LMSapi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B9EAD444-A646-471F-8B09-47C838AEDED7}|LMSapi\\LMSapi.csproj|d:\\chubb\\capstone\\lmsapi\\lmsapi\\controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9EAD444-A646-471F-8B09-47C838AEDED7}|LMSapi\\LMSapi.csproj|solutionrelative:lmsapi\\controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9EAD444-A646-471F-8B09-47C838AEDED7}|LMSapi\\LMSapi.csproj|d:\\chubb\\capstone\\lmsapi\\lmsapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9EAD444-A646-471F-8B09-47C838AEDED7}|LMSapi\\LMSapi.csproj|solutionrelative:lmsapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9EAD444-A646-471F-8B09-47C838AEDED7}|LMSapi\\LMSapi.csproj|d:\\chubb\\capstone\\lmsapi\\lmsapi\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9EAD444-A646-471F-8B09-47C838AEDED7}|LMSapi\\LMSapi.csproj|solutionrelative:lmsapi\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Chubb\\Capstone\\LMSapi\\LMSapi\\Migrations\\20241208070705_MigrationName3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LMSapi\\Migrations\\20241208070705_MigrationName3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20241208070705_MigrationName3.cs",
+              "DocumentMoniker": "D:\\Chubb\\Capstone\\LMSapi\\LMSapi\\Migrations\\20241208070705_MigrationName3.cs",
+              "RelativeDocumentMoniker": "LMSapi\\Migrations\\20241208070705_MigrationName3.cs",
+              "ToolTip": "D:\\Chubb\\Capstone\\LMSapi\\LMSapi\\Migrations\\20241208070705_MigrationName3.cs",
+              "RelativeToolTip": "LMSapi\\Migrations\\20241208070705_MigrationName3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T07:07:06.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Context.cs",
+              "DocumentMoniker": "D:\\Chubb\\Capstone\\LMSapi\\LMSapi\\Context.cs",
+              "RelativeDocumentMoniker": "LMSapi\\Context.cs",
+              "ToolTip": "D:\\Chubb\\Capstone\\LMSapi\\LMSapi\\Context.cs",
+              "RelativeToolTip": "LMSapi\\Context.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAAAJsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T17:55:27.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LibraryController.cs",
+              "DocumentMoniker": "D:\\Chubb\\Capstone\\LMSapi\\LMSapi\\Controllers\\LibraryController.cs",
+              "RelativeDocumentMoniker": "LMSapi\\Controllers\\LibraryController.cs",
+              "ToolTip": "D:\\Chubb\\Capstone\\LMSapi\\LMSapi\\Controllers\\LibraryController.cs",
+              "RelativeToolTip": "LMSapi\\Controllers\\LibraryController.cs",
+              "ViewState": "AgIAAOQCAAAAAAAAAAAqwP0CAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T06:30:17.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Chubb\\Capstone\\LMSapi\\LMSapi\\Models\\User.cs",
+              "RelativeDocumentMoniker": "LMSapi\\Models\\User.cs",
+              "ToolTip": "D:\\Chubb\\Capstone\\LMSapi\\LMSapi\\Models\\User.cs",
+              "RelativeToolTip": "LMSapi\\Models\\User.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAUwL0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T07:33:08.054Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

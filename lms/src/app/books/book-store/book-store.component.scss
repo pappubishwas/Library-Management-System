@@ -1,0 +1,19 @@
+@import "../../../theme.scss";
+
+:host {
+  display: block;
+  padding: 1rem 0;
+}
+
+h1,h3,h4{
+  font-weight: bold;
+}
+h2{
+  font-weight: bold;
+  font-size: x-large;
+}
+
+#availability option{
+  font-size: medium;
+  color: black;
+}

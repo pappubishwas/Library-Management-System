@@ -1,0 +1,470 @@
+[
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "UpdateInventory",
+    "RelativePath": "api/Library/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "inventory",
+        "Type": "LMSapi.Models.Inventory",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "AddBook",
+    "RelativePath": "api/Library/AddBook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookDto",
+        "Type": "LMSapi.Models.BookDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "AddCategory",
+    "RelativePath": "api/Library/AddCategory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookCategory",
+        "Type": "LMSapi.Models.BookCategory",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "ApproveRequest",
+    "RelativePath": "api/Library/ApproveRequest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "memberId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "AssignLibrarian",
+    "RelativePath": "api/Library/AssignLibrarian",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "BlockFineOverdueUsers",
+    "RelativePath": "api/Library/BlockFineOverdueUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "DeleteBook",
+    "RelativePath": "api/Library/DeleteBook",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "DeleteInventories",
+    "RelativePath": "api/Library/DeleteInventories",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "GetAllBorrowedBooks",
+    "RelativePath": "api/Library/GetAllBorrowedBooks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "GetAllInventories",
+    "RelativePath": "api/Library/GetAllInventories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "GetAllMembers",
+    "RelativePath": "api/Library/GetAllMembers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "GetBooks",
+    "RelativePath": "api/Library/GetBooks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "GetBorrowedBookListOfUser",
+    "RelativePath": "api/Library/GetBorrowedBookListOfUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "GetCategories",
+    "RelativePath": "api/Library/GetCategories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "GetMember",
+    "RelativePath": "api/Library/GetMember",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LMSapi.Models.Member, LMSapi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "GetMembers",
+    "RelativePath": "api/Library/GetMembers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "GetNotifications",
+    "RelativePath": "api/Library/GetNotifications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "GetOrders",
+    "RelativePath": "api/Library/GetOrders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "GetOrdersOFUser",
+    "RelativePath": "api/Library/GetOrdersOFUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "memberId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "GetReservations",
+    "RelativePath": "api/Library/GetReservations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "GetUser",
+    "RelativePath": "api/Library/GetUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "GetUsers",
+    "RelativePath": "api/Library/GetUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "Login",
+    "RelativePath": "api/Library/Login",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "LogSearch",
+    "RelativePath": "api/Library/LogSearch",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "LMSapi.Models.LogSearchRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "Membership",
+    "RelativePath": "api/Library/Membership",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "member",
+        "Type": "LMSapi.Models.Member",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "MembershipRenewalNotification",
+    "RelativePath": "api/Library/MembershipRenewalNotification",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "OrderBook",
+    "RelativePath": "api/Library/OrderBook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "Register",
+    "RelativePath": "api/Library/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "LMSapi.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "ReserveBook",
+    "RelativePath": "api/Library/ReserveBook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "ReturnBook",
+    "RelativePath": "api/Library/ReturnBook",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "memberId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "fine",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "SendEmailForPendingReturns",
+    "RelativePath": "api/Library/SendEmailForPendingReturns",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LMSapi.Controllers.LibraryController",
+    "Method": "Unblock",
+    "RelativePath": "api/Library/Unblock",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
