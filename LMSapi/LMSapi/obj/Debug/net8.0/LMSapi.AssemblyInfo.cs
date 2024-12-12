@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LMSapi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0bddc2467f0958f840cbdaefc7c9e6cb4c5379f9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+576e4e9878cf440494e0b7f70c7f4a10354a2582")]
 [assembly: System.Reflection.AssemblyProductAttribute("LMSapi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LMSapi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
