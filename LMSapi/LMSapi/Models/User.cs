@@ -136,7 +136,7 @@ namespace LMSapi.Models
     {
         [Key]
         public int ReportId { get; set; }
-        public string Type { get; set; } = string.Empty; // Borrowings, Reservations, Late Fees, etc.
+        public string Type { get; set; } = string.Empty; 
         public DateTime GeneratedDate { get; set; }
         public string Data { get; set; } = string.Empty; 
         public int CreatedBy { get; set; } 

@@ -21,14 +21,13 @@ namespace LMSapi.Controllers
         public EmailService EmailService { get; }
         public JwtService JwtService { get; }
 
-        [HttpGet("GetUser")]
-        public ActionResult GetUser()
+
+
+        [HttpGet("GetUsers")]
+        public ActionResult GetUsers()
         {
-            var userList = Context.Users.Select(u => new { u.Username, u.Email }).ToList();
-            return Ok( userList );
+            return Ok(Context.Users.ToList());
         }
-
-
         [HttpPost("Membership")]
         public ActionResult Membership(Member member)
         {
@@ -62,21 +61,21 @@ namespace LMSapi.Controllers
             const string subject = "Account Created";
 
             var body = $"""
-<html>
-    <body>
-        <h1>Hello, {user.FirstName} {user.LastName}</h1>
-        <h2>
-            Your account has been created. <strong>UserName:</strong> {user.Username}. 
-            You can log in to your account using your Gmail or username.
-        </h2>
-        <p>
-            Your account has been created with a default role of <strong>Guest</strong>. 
-            To access the services of our library, you need to upgrade to a membership.
-        </p>
-        <h3>Thank you!</h3>
-    </body>
-</html>
-""";
+                           <html>
+                               <body>
+                                   <h1>Hello, {user.FirstName} {user.LastName}</h1>
+                                   <h2>
+                                       Your account has been created. <strong>UserName:</strong> {user.Username}. 
+                                       You can log in to your account using your Gmail or username.
+                                   </h2>
+                                   <p>
+                                       Your account has been created with a default role of <strong>Guest</strong>. 
+                                       To access the services of our library, you need to upgrade to a membership.
+                                   </p>
+                                   <h3>Thank you!</h3>
+                               </body>
+                           </html>
+                           """;
 
             EmailService.SendEmail(user.Email, subject, body);
             int userId = Context.Users.Where(u => u.Username == user.Username).Select(u => u.Id).FirstOrDefault();
@@ -410,14 +409,6 @@ namespace LMSapi.Controllers
         }
 
 
-
-        [Authorize]
-        [HttpGet("GetUsers")]
-        public ActionResult GetUsers()
-        {
-            return Ok(Context.Users.ToList());
-        }
-
         [Authorize]
         [HttpGet("GetMembers")]
         public ActionResult GetMembers()
@@ -430,6 +421,13 @@ namespace LMSapi.Controllers
         public ActionResult GetReservations()
         {
             return Ok(Context.Reservations.ToList());
+        }
+
+        [HttpGet("GetUser")]
+        public ActionResult GetUser()
+        {
+            var userList = Context.Users.Select(u => new { u.Username, u.Email }).ToList();
+            return Ok(userList);
         }
 
         [Authorize]
