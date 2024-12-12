@@ -4889,11 +4889,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Chubb\\LMS\\LMSapi\\LMSapi\\LMSapi.csproj",
+      "projectUniqueName": "D:\\Chubb\\Library-Management-System\\LMSapi\\LMSapi\\LMSapi.csproj",
       "projectName": "LMSapi",
-      "projectPath": "D:\\Chubb\\LMS\\LMSapi\\LMSapi\\LMSapi.csproj",
+      "projectPath": "D:\\Chubb\\Library-Management-System\\LMSapi\\LMSapi\\LMSapi.csproj",
       "packagesPath": "C:\\Users\\KIIT\\.nuget\\packages\\",
-      "outputPath": "D:\\Chubb\\LMS\\LMSapi\\LMSapi\\obj\\",
+      "outputPath": "D:\\Chubb\\Library-Management-System\\LMSapi\\LMSapi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KIIT\\AppData\\Roaming\\NuGet\\NuGet.Config",
