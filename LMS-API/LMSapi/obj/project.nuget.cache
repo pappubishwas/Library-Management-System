@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i9rwx3MGBOU=",
+  "dgSpecHash": "MGzphNHeyzI=",
   "success": true,
-  "projectFilePath": "D:\\Chubb\\Library-Management-System\\LMSapi\\LMSapi\\LMSapi.csproj",
+  "projectFilePath": "D:\\Chubb\\Library-Management-System\\LMS-API\\LMSapi\\LMSapi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KIIT\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\KIIT\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

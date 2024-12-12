@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Chubb\\Library-Management-System\\LMSapi\\LMSapi\\LMSapi.csproj": {}
+    "D:\\Chubb\\Library-Management-System\\LMS-API\\LMSapi\\LMSapi.csproj": {}
   },
   "projects": {
-    "D:\\Chubb\\Library-Management-System\\LMSapi\\LMSapi\\LMSapi.csproj": {
+    "D:\\Chubb\\Library-Management-System\\LMS-API\\LMSapi\\LMSapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Chubb\\Library-Management-System\\LMSapi\\LMSapi\\LMSapi.csproj",
+        "projectUniqueName": "D:\\Chubb\\Library-Management-System\\LMS-API\\LMSapi\\LMSapi.csproj",
         "projectName": "LMSapi",
-        "projectPath": "D:\\Chubb\\Library-Management-System\\LMSapi\\LMSapi\\LMSapi.csproj",
+        "projectPath": "D:\\Chubb\\Library-Management-System\\LMS-API\\LMSapi\\LMSapi.csproj",
         "packagesPath": "C:\\Users\\KIIT\\.nuget\\packages\\",
-        "outputPath": "D:\\Chubb\\Library-Management-System\\LMSapi\\LMSapi\\obj\\",
+        "outputPath": "D:\\Chubb\\Library-Management-System\\LMS-API\\LMSapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KIIT\\AppData\\Roaming\\NuGet\\NuGet.Config",
