@@ -1,41 +1,40 @@
-<div class="bg-gray-700 p-6 rounded-lg shadow-md">
-    <!-- Header Section -->
-    <div class="text-center">
-      <p class="text-3xl font-bold text-gray-100">Pending Approval Requests for Membership ({{ members.length }})</p>
-    </div>
-  
-    <!-- Members Table -->
-    <div class="mt-6 overflow-x-auto">
-      <table class="table-auto w-full border-collapse border border-gray-200">
-        <thead class="bg-gray-300">
-          <tr>
-            <th class="border border-gray-300 px-4 py-2">Member ID</th>
-            <th class="border border-gray-300 px-4 py-2">Name</th>
-            <th class="border border-gray-300 px-4 py-2">Contact Details</th>
-            <th class="border border-gray-300 px-4 py-2">Membership Type</th>
-            <th class="border border-gray-300 px-4 py-2">Status</th>
-            <th class="border border-gray-300 px-4 py-2">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Loop through members -->
-          <tr *ngFor="let member of members" class="text-center hover:bg-gray-500">
-            <td class="border border-gray-300 px-4 py-2">{{ member.memberId }}</td>
-            <td class="border border-gray-300 px-4 py-2">{{ member.name }}</td>
-            <td class="border border-gray-300 px-4 py-2">{{ member.contactDetails }}</td>
-            <td class="border border-gray-300 px-4 py-2">{{ member.membershipType }}</td>
-            <td class="border border-gray-300 px-4 py-2">{{ member.status }}</td>
-            <td class="border border-gray-300 px-4 py-2">
-              <!-- Approve Button -->
-              <button 
-                (click)="approve(member)" 
-                class="bg-green-500 text-white py-1 px-4 rounded-lg hover:bg-green-600">
-                Approve
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+  <!-- Header Section -->
+  <div class="text-center mb-6">
+    <p class="text-3xl font-semibold text-gray-100">Pending Approval Requests for Membership ({{ members.length }})</p>
   </div>
-  
+
+  <!-- Members Table -->
+  <div class="mt-6 overflow-x-auto rounded-lg shadow-lg bg-white">
+    <table class="table-auto w-full border-collapse border border-gray-300">
+      <thead class="bg-gray-700 text-white">
+        <tr>
+          <th class="border border-gray-300 px-6 py-3 text-left">Member ID</th>
+          <th class="border border-gray-300 px-6 py-3 text-left">Name</th>
+          <th class="border border-gray-300 px-6 py-3 text-left">Contact Details</th>
+          <th class="border border-gray-300 px-6 py-3 text-left">Membership Type</th>
+          <th class="border border-gray-300 px-6 py-3 text-left">Status</th>
+          <th class="border border-gray-300 px-6 py-3 text-left">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Loop through members -->
+        <tr *ngFor="let member of members" class="hover:bg-gray-100 transition duration-300">
+          <td class="border border-gray-300 px-6 py-4 text-sm font-medium">{{ member.memberId }}</td>
+          <td class="border border-gray-300 px-6 py-4 text-sm">{{ member.name }}</td>
+          <td class="border border-gray-300 px-6 py-4 text-sm">{{ member.contactDetails }}</td>
+          <td class="border border-gray-300 px-6 py-4 text-sm">{{ member.membershipType }}</td>
+          <td class="border border-gray-300 px-6 py-4 text-sm">{{ member.status }}</td>
+          <td class="border border-gray-300 px-6 py-4 text-sm">
+            <!-- Approve Button -->
+            <button 
+              (click)="approve(member)" 
+              class="bg-green-600 text-white py-2 px-6 rounded-lg hover:bg-green-700 transition duration-300">
+              Approve
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

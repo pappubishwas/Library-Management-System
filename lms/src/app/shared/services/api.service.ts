@@ -1,4 +1,4 @@
-import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { Observable, Subject, map } from 'rxjs';
@@ -264,12 +264,7 @@ export class ApiService {
 
   
 
-  updateInventory(id: number, inventory: any): Observable<any> {
-    return this.http.put(`${this.baseUrl}/${id}`, inventory);
-  }
-
   deleteInventory(id: number): Observable<any> {
-    // Include the id in the URL as a query parameter
     return this.http.delete(`${this.baseUrl}DeleteInventories?id=${id}`);
   }
   

@@ -18,9 +18,6 @@ export class MembershipComponent implements OnInit{
     
   }
 
-  // checkMemberShipType(){
-  //   if(this.member[0].membershipType)
-  // }
 
   ngOnInit(): void {
     const user = this.apiService.getUserInfo();
@@ -65,13 +62,13 @@ export class MembershipComponent implements OnInit{
     this.apiService.membership(m).subscribe({
       next: (res) => {
         this.snackBar.open('Membership request sent successfully', 'OK', {
-          duration: 3000,
+          duration: 1000,
         });
       },
       error: (err) => {
         console.log(err);
         this.snackBar.open('Membership request failed', 'OK', {
-          duration: 3000,
+          duration: 1000,
         });
       },
     });

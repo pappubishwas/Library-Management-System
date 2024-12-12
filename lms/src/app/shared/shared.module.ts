@@ -7,7 +7,7 @@ import { PageFooterComponent } from './components/page-footer/page-footer.compon
 import { PageSideNavComponent } from './components/page-side-nav/page-side-nav.component';
 import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { PageTableComponent } from './components/page-table/page-table.component';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +15,6 @@ import { PageTableComponent } from './components/page-table/page-table.component
     PageFooterComponent,
     PageSideNavComponent,
     PageNotFoundComponent,
-    PageTableComponent,
   ],
   imports: [
     CommonModule,
@@ -34,7 +33,6 @@ import { PageTableComponent } from './components/page-table/page-table.component
     PageSideNavComponent,
     RouterModule,
     PageNotFoundComponent,
-    PageTableComponent,
   ],
 })
 export class SharedModule {}

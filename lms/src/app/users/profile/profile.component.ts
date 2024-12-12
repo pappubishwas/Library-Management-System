@@ -23,7 +23,7 @@ export class ProfileComponent {
       { name: "Name", value: user.firstName + " " + user.lastName },
       { name: "Email", value: `${user.email}` },
       { name: "Mobile", value: `${user.mobileNumber}` },
-      { name: "Account Status", value: `${user.isActive}` },
+      {name: "Account Status", value: user.isActive ? "Active" : "Inactive" },
       { name: "Created On", value: `${user.createdOn}` },
       { name: "Type", value: `${Role[user.role]}` },
     ];

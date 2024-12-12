@@ -21,9 +21,9 @@ export class ReportsComponent implements OnInit {
   totalLateFeePaid:number=0;
   totalBorrowedBooks:number=0;
   totalReservedBooks:number=0;
-  maxBorrowedBookId: number = 0; // Book ID of the most borrowed book
-  maxBorrowedCount: number = 0; // Count of the most borrowed book
-  maxBorrowedBookDetails: Book | undefined; // Details of the most borrowed book
+  maxBorrowedBookId: number = 0; 
+  maxBorrowedCount: number = 0; 
+  maxBorrowedBookDetails: Book | undefined; 
 
   totalUsers: number = 0;
   totalMembers: number = 0;

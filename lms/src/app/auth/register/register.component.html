@@ -1,124 +1,121 @@
-<div class="register-form p-8 max-w-2xl mx-auto  rounded-lg shadow-lg bg-black">
-  <h2 class="text-5xl font-bold mb-4 text-center text-orange-600">Create Account</h2>
-    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        
-        <!-- UserName Field -->
-        <div class="mb-4 col-span-2">
-          <label for="userName" class="block text-sm font-medium">User Name</label>
-          <input
-            type="text"
-            id="userName"
-            formControlName="userName"
-            class="w-full p-2 border border-gray-300 rounded"
-          />
-          <div *ngIf="registerForm.get('userName')?.invalid && registerForm.get('userName')?.touched" class="text-red-500 text-sm">
-            User Name is required.
-          </div>
-        </div>
-  
-        <!-- First Name Field -->
-        <div class="mb-4">
-          <label for="firstName" class="block text-sm font-medium">First Name</label>
-          <input
-            type="text"
-            id="firstName"
-            formControlName="firstName"
-            class="w-full p-2 border border-gray-300 rounded"
-          />
-          <div *ngIf="registerForm.get('firstName')?.invalid && registerForm.get('firstName')?.touched" class="text-red-500 text-sm">
-            First Name is required.
-          </div>
-        </div>
-  
-        <!-- Last Name Field -->
-        <div class="mb-4">
-          <label for="lastName" class="block text-sm font-medium">Last Name</label>
-          <input
-            type="text"
-            id="lastName"
-            formControlName="lastName"
-            class="w-full p-2 border border-gray-300 rounded"
-          />
-          <div *ngIf="registerForm.get('lastName')?.invalid && registerForm.get('lastName')?.touched" class="text-red-500 text-sm">
-            Last Name is required.
-          </div>
-        </div>
-  
-        <!-- Email Field -->
-        <div class="mb-4 col-span-2">
-          <label for="email" class="block text-sm font-medium">Email</label>
-          <input
-            type="email"
-            id="email"
-            formControlName="email"
-            class="w-full p-2 border border-gray-300 rounded"
-          />
-          <div *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched" class="text-red-500 text-sm">
-            A valid email is required.
-          </div>
-        </div>
-  
-        <!-- Mobile Number Field -->
-        <div class="mb-4 col-span-2">
-          <label for="mobileNumber" class="block text-sm font-medium">Mobile Number</label>
-          <input
-            type="text"
-            id="mobileNumber"
-            formControlName="mobileNumber"
-            class="w-full p-2 border border-gray-300 rounded"
-          />
-          <div *ngIf="registerForm.get('mobileNumber')?.invalid && registerForm.get('mobileNumber')?.touched" class="text-red-500 text-sm">
-            Mobile Number is required.
-          </div>
-        </div>
-  
-        <!-- Password Field -->
-        <div class="mb-4">
-          <label for="password" class="block text-sm font-medium">Password</label>
-          <input
-            type="password"
-            id="password"
-            formControlName="password"
-            class="w-full p-2 border border-gray-300 rounded"
-            [type]="hidePwdContent ? 'password' : 'text'"
-          />
-          <div *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched" class="text-red-500 text-sm">
-            Password is required.
-          </div>
-        </div>
-  
-        <!-- Repeat Password Field -->
-        <div class="mb-4">
-          <label for="rpassword" class="block text-sm font-medium">Repeat Password</label>
-          <input
-            type="password"
-            id="rpassword"
-            formControlName="rpassword"
-            class="w-full p-2 border border-gray-300 rounded"
-            [type]="hidePwdContent ? 'password' : 'text'"
-          />
-          <div *ngIf="registerForm.hasError('mismatch') && registerForm.get('rpassword')?.touched" class="text-red-500 text-sm">
-            Passwords do not match.
-          </div>
-        </div>
-  
-        <!-- Submit Button -->
-        <div class="col-span-2 text-center">
-          <button
-            type="submit"
-            [disabled]="registerForm.invalid"
-            class="w-full bg-blue-500 text-white py-2 px-4 rounded"
-          >
-            Register
-          </button>
+<div class="register-form p-8 max-w-2xl mx-auto rounded-lg shadow-lg bg-gray-800 text-white">
+  <h2 class="text-5xl font-bold mb-6 text-center text-orange-500">Create Account</h2>
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- UserName Field -->
+      <div class="mb-4 col-span-2">
+        <label for="userName" class="block text-sm font-medium">User Name</label>
+        <input
+          type="text"
+          id="userName"
+          formControlName="userName"
+          class="w-full p-2 border border-gray-600 rounded bg-gray-900 text-white"
+        />
+        <div *ngIf="registerForm.get('userName')?.invalid && registerForm.get('userName')?.touched" class="text-red-400 text-sm">
+          User Name is required.
         </div>
       </div>
-    </form>
-    
-    <div class="text-center mt-4 flex justify-between">
-      <p class="text-xl">Already have an account?</p>
-      <a routerLink="/login" class="text-blue-500 font-bold text-xl border rounded py-1 px-4">Login</a>
+
+      <!-- First Name Field -->
+      <div class="mb-4">
+        <label for="firstName" class="block text-sm font-medium">First Name</label>
+        <input
+          type="text"
+          id="firstName"
+          formControlName="firstName"
+          class="w-full p-2 border border-gray-600 rounded bg-gray-900 text-white"
+        />
+        <div *ngIf="registerForm.get('firstName')?.invalid && registerForm.get('firstName')?.touched" class="text-red-400 text-sm">
+          First Name is required.
+        </div>
+      </div>
+
+      <!-- Last Name Field -->
+      <div class="mb-4">
+        <label for="lastName" class="block text-sm font-medium">Last Name</label>
+        <input
+          type="text"
+          id="lastName"
+          formControlName="lastName"
+          class="w-full p-2 border border-gray-600 rounded bg-gray-900 text-white"
+        />
+        <div *ngIf="registerForm.get('lastName')?.invalid && registerForm.get('lastName')?.touched" class="text-red-400 text-sm">
+          Last Name is required.
+        </div>
+      </div>
+
+      <!-- Email Field -->
+      <div class="mb-4 col-span-2">
+        <label for="email" class="block text-sm font-medium">Email</label>
+        <input
+          type="email"
+          id="email"
+          formControlName="email"
+          class="w-full p-2 border border-gray-600 rounded bg-gray-900 text-white"
+        />
+        <div *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched" class="text-red-400 text-sm">
+          Please enter a valid email address.
+        </div>
+      </div>
+
+      <!-- Mobile Number Field -->
+      <div class="mb-4 col-span-2">
+        <label for="mobileNumber" class="block text-sm font-medium">Mobile Number</label>
+        <input
+          type="text"
+          id="mobileNumber"
+          formControlName="mobileNumber"
+          class="w-full p-2 border border-gray-600 rounded bg-gray-900 text-white"
+        />
+        <div *ngIf="registerForm.get('mobileNumber')?.invalid && registerForm.get('mobileNumber')?.touched" class="text-red-400 text-sm">
+          Mobile Number is required.
+        </div>
+      </div>
+
+      <!-- Password Field -->
+      <div class="mb-4">
+        <label for="password" class="block text-sm font-medium">Password</label>
+        <input
+          type="password"
+          id="password"
+          formControlName="password"
+          class="w-full p-2 border border-gray-600 rounded bg-gray-900 text-white"
+        />
+        <div *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched" class="text-red-400 text-sm">
+          Password must be at least 8 characters long, including one uppercase, one number, and one special character.
+        </div>
+      </div>
+
+      <!-- Repeat Password Field -->
+      <div class="mb-4">
+        <label for="rpassword" class="block text-sm font-medium">Repeat Password</label>
+        <input
+          type="password"
+          id="rpassword"
+          formControlName="rpassword"
+          class="w-full p-2 border border-gray-600 rounded bg-gray-900 text-white"
+        />
+        <div *ngIf="registerForm.hasError('mismatch') && registerForm.get('rpassword')?.touched" class="text-red-400 text-sm">
+          Passwords do not match.
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="col-span-2 text-center">
+        <button
+          type="submit"
+          [disabled]="registerForm.invalid"
+          class="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded"
+        >
+          Register
+        </button>
+      </div>
     </div>
+  </form>
+
+  <div class="text-center mt-6 flex justify-between">
+    <p class="text-lg">Already have an account?</p>
+    <a routerLink="/login" class="text-orange-400 hover:underline text-lg">Login</a>
   </div>
-  
+</div>

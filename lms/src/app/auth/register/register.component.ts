@@ -17,49 +17,64 @@ export class RegisterComponent {
     private apiService: ApiService,
     private snackBar: MatSnackBar
   ) {
-    this.registerForm = fb.group({
-      userName: fb.control('', [Validators.required]),
-      firstName: fb.control('', [Validators.required]),
-      lastName: fb.control('', [Validators.required]),
-      email: fb.control('', [Validators.required, Validators.email]),
-      mobileNumber: fb.control('', [Validators.required]),
-      password: fb.control('', [Validators.required]),
-      rpassword: fb.control('', [Validators.required]),
-    });
+    this.registerForm = fb.group(
+      {
+        userName: fb.control('', [Validators.required]),
+        firstName: fb.control('', [Validators.required]),
+        lastName: fb.control('', [Validators.required]),
+        email: fb.control('', [Validators.required, Validators.email]),
+        mobileNumber: fb.control('', [
+          Validators.required,
+          Validators.pattern('^[0-9]{10}$'), 
+        ]),
+        password: fb.control('', [
+          Validators.required,
+          Validators.minLength(8),
+          Validators.pattern('^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).+$'), 
+        ]),
+        rpassword: fb.control('', [Validators.required]),
+      },
+      { validators: this.passwordMatchValidator }
+    );
+  }
+
+  // Custom validator to check if passwords match
+  passwordMatchValidator(form: FormGroup) {
+    const password = form.get('password')?.value;
+    const rpassword = form.get('rpassword')?.value;
+    return password === rpassword ? null : { mismatch: true };
   }
 
   checkUsernameAndEmail() {
-    const username = this.registerForm.get('userName')?.value;  
-    const email = this.registerForm.get('email')?.value;  
-  
+    const username = this.registerForm.get('userName')?.value;
+    const email = this.registerForm.get('email')?.value;
+
     this.apiService.getUser().subscribe((userList) => {
       let isUsernameTaken = false;
       let isEmailTaken = false;
-  
+
       for (let user of userList) {
         if (user.username.toLowerCase() === username.toLowerCase()) {
           isUsernameTaken = true;
-          break; 
+          break;
         }
         if (user.email.toLowerCase() === email.toLowerCase()) {
           isEmailTaken = true;
-          break; 
+          break;
         }
       }
-  
+
       if (isUsernameTaken) {
         this.snackBar.open('Username is already taken', 'OK', { duration: 3000 });
         return;
       }
       if (isEmailTaken) {
-        this.snackBar.open('Gmail is already taken', 'OK', { duration: 3000 });
+        this.snackBar.open('Email is already taken', 'OK', { duration: 3000 });
         return;
       }
       this.register();
     });
   }
-  
-
 
   register() {
     let user = {
@@ -73,10 +88,11 @@ export class RegisterComponent {
 
     this.apiService.register(user).subscribe({
       next: (res) => {
-        this.snackBar.open('Registration successful', 'OK', { duration: 3000 });
+        this.snackBar.open('Registration successful', 'OK');
+        this.registerForm.reset();
       },
       error: (err) => {
-        this.snackBar.open('Registration failed', 'OK', { duration: 3000 });
+        this.snackBar.open('Registration failed', 'OK');
       },
     });
   }
@@ -86,7 +102,7 @@ export class RegisterComponent {
     if (this.registerForm.valid) {
       this.checkUsernameAndEmail();
     } else {
-      this.snackBar.open('Please fill all fields correctly', 'OK', { duration: 3000 });
+      this.snackBar.open('Please fill all fields correctly', 'OK');
     }
   }
 }

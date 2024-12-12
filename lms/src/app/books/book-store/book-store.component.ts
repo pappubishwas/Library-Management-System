@@ -124,7 +124,8 @@ export class BookStoreComponent {
           (availability === 'available' && book.availableCopies > 0) ||
           (availability === 'borrowed' && book.availableCopies === 0);
   
-          const matchSearch = search && book.title.toLowerCase().includes(search.toLowerCase());
+          const matchSearch = !search || book.title.toLowerCase().includes(search.toLowerCase());
+
         return matchesPublicationYear && matchesAvailability && matchSearch;
       });
       return bookToDisplay.books.length > 0;
@@ -132,7 +133,7 @@ export class BookStoreComponent {
   
     const resultsCount = this.getBookCount();
   
-    // Log the advanced search filters and results count
+
     console.log('Advanced filters:', this.filters);
     console.log(`Results Count: ${resultsCount}`);
 
